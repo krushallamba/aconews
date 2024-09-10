@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+ACONEWS is a responsive news app powered by the gnews.io API. It provides the latest news headlines and articles on various topics.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+1.Project Setup
+2.Project Overview
+3.Approach
+4.Challenges Faced & Solutions
+5.Technologies Used
 
-## Available Scripts
 
-In the project directory, you can run:
+Project Setup
+1. Prerequisites
+Before you start, ensure that you have the following installed on your machine:
+	Node.js (v14+ recommended)
+	Firebase CLI for deployment
+	A gnews.io API key
+2. Installation Steps
+	Clone the Repository
+	Run the Application Locally
+3. Firebase Deployment
+	Login to Firebase: firebase login
+	Deploy to Firebase Run the following command to deploy the app to Firebase: firebase deploy
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Project Overview
+ACONEWS is a news app that allows users to:
+	Fetch the latest news headlines from the gnews.io API.
+	Search for specific topics or keywords.
+	View the app on mobile, tablet, and desktop devices (fully responsive design).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+1. Frontend (React)
+	Responsive Design: Ensured that the app works flawlessly across different devices by using CSS grid, flexbox, and media queries 	                   for responsiveness.
+	State Management: Managed the news data and pagination using React hooks (useState, useEffect).
+	Search Functionality: Integrated a search bar to allow users to search for news articles based on specific keywords, with results 			      dynamically loaded via the gnews.io API.
+2. Firebase Hosting
+	Deployed the project to Firebase’s Free Tier for hosting and ensured that the app runs seamlessly in production.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Challenges Faced and Solutions
+1. API Rate Limiting
+	Challenge: The gnews.io free tier imposes limits on the number of API requests.
+	Solution: Limited the number of articles fetched at once to avoid hitting the rate limit too quickly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Responsive Design
+	Challenge: Ensuring that the app looks good on all devices, from mobile phones to desktops.
+	Solution: Used CSS grid and flexbox for layout, combined with media queries to make the design fluid and responsive across screen 		  sizes.
+3. Firebase Deployment Issues
+	Challenge: Encountered issues with Firebase scripts being blocked due to PowerShell execution policies on Windows.
+	Solution: Adjusted the PowerShell execution policy to RemoteSigned to allow Firebase scripts to run.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+How to Use
+	Search for News: Use the search bar at the top to enter a keyword. The app will display news articles related to your search.
+	Responsive: View the app on any device, and the layout will adjust automatically to fit the screen size.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Future Improvements
+	User Authentication: Add user authentication for personalized news feeds.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+	Feel free to fork the project, make improvements, and submit pull requests. All contributions are welcome!
