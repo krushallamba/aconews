@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
-import logoimage from '../aconews-high-resolution-logo-transparent.png'
+import logoimage from '../newsnest-high-resolution-logo-transparent.png'
 const Newsapp = () => {
     const [search, setSearch] = useState("india");
     const [newsData, setNewsData] = useState(null)
@@ -23,6 +23,7 @@ const Newsapp = () => {
     }
     const userInput = (event) =>{
         setSearch(event.target.value)
+        getData()
     }
 
   return (
@@ -57,7 +58,7 @@ const Newsapp = () => {
             
         </div>
         <div className='footer'>
-            <p>Copyright 2024 ACONEWS</p>
+            <p>Copyright 2024 NewsNest</p>
         </div>
     </div>
   )

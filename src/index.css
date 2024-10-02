@@ -26,7 +26,7 @@ nav {
 .logo img{
   margin: 1rem 0;
   height: 2rem;
-  width: 14rem;
+  width: 12rem;
 }
 
 nav input {
@@ -220,6 +220,10 @@ nav ul {
 @media (max-width: 480px) {
   .card {
     width: 100%;
+  }
+
+  .cardContainer{
+    padding: 1rem;
   }
 
   .card img {
